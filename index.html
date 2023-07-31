@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Travel Agent</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION SECTION -->
+      <section id="navigation" class="container">
+        <a href="" id="logo">Dino</a>
+        <nav>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#package">Our Package</a></li>
+            <li><a href="#call">Call Us</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- HERO SECTION -->
+      <section id="hero" class="container">
+        <h1>Your Trusted Travel Agent's</h1>
+      </section>
+
+      <section id="hero1" class="container">
+        <p>Your happiness is our hapiness</p>
+    </section>
+
+    </header>
+
+    <div class="container" id="review-contact">
+      <!-- Review Section -->
+      <section id="review">
+        <div id="review-stroke">
+          <div class="review-container">
+            <div class="review-img">
+              <img src="assets/download.png" alt="">
+            </div>
+            <!-- <img src="assets/Bali/Bali-1.jpg" alt="Bali-1" /> -->
+            <p class="review-text">
+              &quot;Liburan jadi menyenangkan bersama Travel Agentku
+              Dino.&quot;
+            </p>
+            <div class="review-id">
+              <img src="assets/default_profile.png" alt="avatar-3" />
+              <div>
+                <p class="review-name">Mohammad Dimas Noufal</p>
+                <p class="review-job">Mobile Developer, 19</p>
+              </div>
+            </div>
+          </div>
+          <div id="review-circle">
+            <span class="circle select"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
+        </div>
+
+        <!-- Feature Section -->
+        <ol id="feature">
+          <li>
+            <div class="feature-list">
+              <span>1</span>
+              <p>
+                Nikmati perjalanan tak terlupakan dengan layanan travel profesional dan berkualitas. 
+                Paket menarik, destinasi menakjubkan.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="feature-list">
+              <span>2</span>
+              <p>
+                Jelajahi alam dan budaya dunia dengan penawaran travel eksklusif. 
+                Tim berpengalaman atur semuanya.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="feature-list">
+              <span>3</span>
+              <p>
+                Bebaskan diri dengan petualangan tak terlupakan. 
+                Harga istimewa untuk kelompok, keluarga, pasangan.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h3>Contact Us</h3>
+        <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+        <form>
+          <div id="input-name" data-text="*Nama tidak boleh kosong">
+            <label for="name">Your Name:</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="First and last name"
+              maxlength="20"
+              oninput="removeValidation(event)"
+            />
+          </div>
+          <div id="input-email" data-text="*Email tidak boleh kosong">
+            <label for="email">Email Address:</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="example@gmail.com"
+              maxlength="30"
+              oninput="removeValidation(event)"
+            />
+          </div>
+          <div id="input-interest">
+            <label for="interest">What you interested in:</label>
+            <select
+              id="interest"
+              name="interest"
+              onchange="removeValidation(event)"
+            >
+              <option value="select">Select option</option>
+              <option value="pantai">Pantai</option>
+              <option value="laut">Laut</option>
+              <option value="gunung">Gunung</option>
+              <option value="alam">Alam</option>
+              <option value="taman_bermain">Taman Bermain</option>
+            </select>
+          </div>
+          <button id="send" onclick="clickSend(event)">SEND</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Package Section -->
+    <section id="package" class="container">
+      <h2>Our Package</h2>
+      <!-- Package Region -->
+      <div id="package-region">
+        <div class="region-list">
+          <span>Jpn</span>
+          <div>
+            <h3>Japan</h3>
+            <p>
+              Travel dan wisata di Japan. 
+              kunjungi cagar budaya dan kuliner yang menarik
+            </p>
+          </div>
+        </div>
+        <div class="region-list">
+          <span>Eg</span>
+          <div>
+            <h3>England</h3>
+            <p>
+              Travel dan wisata di England. 
+              kunjungi cagar budaya dan kuliner yang menarik
+            </p>
+          </div>
+        </div>
+        <div class="region-list">
+          <span>Spg</span>
+          <div>
+            <h3>Singapore</h3>
+            <p>
+              Travel dan wisata di Singapore. 
+              kunjungi cagar budaya dan kuliner yang menarik
+            </p>
+          </div>
+        </div>
+      </div>
+      <span id="line"></span>
+
+      <!-- Package Destination -->
+      <div id="package-destination">
+        <div class="destination-list">
+          <span>Band</span>
+          <div>
+            <h3>Bandung</h3>
+            <p>
+              Travel dan wisata di Bandung. Kunjungi Kota Sejarah, budaya dan kuliner yang
+              menarik
+            </p>
+          </div>
+        </div>
+        <div class="destination-list">
+          <span>Srby</span>
+          <div>
+            <h3>Surabaya</h3>
+            <p>
+              Travel dan wisata di Bandung. Kunjungi budaya dan kuliner yang
+              menarik
+            </p>
+          </div>
+        </div>
+        <div class="destination-list">
+          <span>Lmpg</span>
+          <div>
+            <h3>Lampung</h3>
+            <p>
+              Travel dan wisata di Bandung. Budaya dan kuliner yang
+              menarik
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="call" class="container">
+      <div id="call-stroke">
+        <h2>Teguhkan Pilihan Anda</h2>
+        <p>
+          Sepenuh hati kami akan membahagiakan hati anda. Tidak usah berpikir
+          lama, hubungi kami dan kebahagian menghampiri anda.
+        </p>
+        <button>Call Us</button>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="container">
+      <a href="#hero">Dino</a>
+      <p>copyright &copy; Dimasnoufal</p>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>
